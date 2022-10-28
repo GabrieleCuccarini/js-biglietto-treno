@@ -20,11 +20,14 @@ if ( age < 18 ) {
     let scontoMinorenni = prezzoDelBiglietto * 0.80 ;
     const scontoMinorDeci = scontoMinorenni.toFixed(2)
     console.log(scontoMinorDeci)
-  }
-
-if ( age > 64 ) {
+    alert("Il tuo biglietto costa " + (scontoMinorDeci) + "€. "
+    + ("Ti è stato applicato il 20% di sconto"))
+} else if ( age > 65 ) {
     let scontoOver = prezzoDelBiglietto * 0.60 ;
     const scontoOverDeci = scontoOver.toFixed(2);
     console.log(scontoOverDeci)
+    alert("Il tuo biglietto costa " + (scontoOverDeci) + "€. "
+    + ("Ti è stato applicato il 40% di sconto"))
+} else {
+alert("Il tuo biglietto costa " + (prezzoDelBiglietto) + "€. " + "Non hai diritto ad alcuno sconto")
 }
-
